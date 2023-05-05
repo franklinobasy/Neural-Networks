@@ -88,7 +88,8 @@ def train(features, targets, epochs, learn_rate, graph_lines=False):
                 print("Train loss: ", loss)
             last_loss = loss
 
-            # Converting the output (float) to boolean as it is a binary classification
+            # Converting the output (float) to boolean as
+            # it is a binary classification
             # e.g. 0.95 --> True (= 1), 0.31 --> False (= 0)
             predictions = out > 0.5
 
